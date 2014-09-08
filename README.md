@@ -6,6 +6,7 @@ Quickly read Wordpress or any RSS/Atom feed in C#
 Use
 -------------
 ```
+[Route("~/blog/{year:int?}/{month:int?}")]
 public ActionResult Index(int page = 1, int? year = null, int? month = null)
 {
 	var posts = new List<BlogPost>();
