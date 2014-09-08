@@ -22,8 +22,7 @@ public ActionResult Index(int page = 1, int? year = null, int? month = null)
 		monthFilter = "page";
 	}
 
-	var doPage = false;
-	var key = string.Format("photofy.blog.{0}.{1}", monthFilter, page);
+	var doPage = false;	
 	if (page != 1)
 		doPage = true;
         
